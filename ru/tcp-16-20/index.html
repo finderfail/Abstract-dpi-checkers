@@ -131,24 +131,15 @@
   </table>
   <pre id="log"></pre>
   <div class="footer">
-    💡 DPI[tcp 16-20] /
-    See <b><a href="https://github.com/net4people/bbs/issues/490" target="_blank">here</a></b> for more details.<br>
-    This checker (and others) are available in <b><a href="https://github.com/hyperion-cs/dpi-checkers" target="_blank">this</a></b> open-source repository.
+    💡 DPI[tcp 16-20]
   </div>
 
   <script>
     const TEST_SUITE = [
-      { id: "CF-02", provider: "Cloudflare", times: 1, url: "https://genshin.jmp.blue/characters/all#" },
-      { id: "CF-03", provider: "Cloudflare", times: 1, url: "https://api.frankfurter.dev/v1/2000-01-01..2002-12-31" },
-      { id: "DO-01", provider: "DigitalOcean", times: 2, url: "https://genderize.io/" },
-      { id: "HE-01", provider: "Hetzner", times: 2, url: "https://bible-api.com/john+1,2,3,4,5,6,7,8,9,10" },
-      { id: "HE-02", provider: "Hetzner", times: 1, url: "https://tcp1620-01.dubybot.live/1MB.bin" },
-      { id: "HE-03", provider: "Hetzner", times: 1, url: "https://tcp1620-02.dubybot.live/1MB.bin" },
-      { id: "HE-04", provider: "Hetzner", times: 1, url: "https://tcp1620-05.dubybot.live/1MB.bin" },
-      { id: "HE-05", provider: "Hetzner", times: 1, url: "https://tcp1620-06.dubybot.live/1MB.bin" },
-      { id: "OVH-01", provider: "OVH", times: 1, url: "https://eu.api.ovh.com/console/rapidoc-min.js" },
-      { id: "OVH-02", provider: "OVH", times: 1, url: "https://ovh.sfx.ovh/10M.bin" },
-      { id: "OR-01", provider: "Oracle", times: 1, url: "https://sfx.ovh/10M.bin" },
+      { id: "ABM-01", provider: "Abstract Main", times: 1, url: "https://genshin.jmp.blue/characters/all#" },
+      { id: "AB-01", provider: "Abstract Infra1", times: 1, url: "https://api.frankfurter.dev/v1/2000-01-01..2002-12-31" },
+      { id: "AB-02", provider: "Abstract Infra2", times: 2, url: "https://genderize.io/" },
+      { id: "ACH-01", provider: "Abstract China infra1", times: 2, url: "https://china-infra2.abstractenv.com/api" },
     ];
 
     const OK_THRESHOLD_BYTES = 64 * 1024;
