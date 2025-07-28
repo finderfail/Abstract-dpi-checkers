@@ -198,7 +198,7 @@
     const getHttpStatus = id => httpCodes[id];
 
     const getUniqueUrl = url => {
-      return url.includes('?') ? `${url}&t=${Math.random()}` : `${url}?t=${Math.random()}`;
+      return url.includes('?') ? `${url}&t=${Math.random()}` : `${url}`;
     };
 
     const startOrchestrator = async () => {
