@@ -283,7 +283,7 @@
           setStatus(statusCell, status ? "Detected❗️" : "Detected*❗️", "bad");
         } else {
           logPush("ERR", prefix, `Fetch/read error => ${e}`);
-          setStatus(statusCell, "Failed to complete detection ⚠️", "");
+          setStatus(statusCell, "Fetch/read error => TypeError: NetworkError when attempting to fetch resource. ⚠️", "");
         }
       }
     };
