@@ -257,7 +257,7 @@
             logPush("INFO", prefix, `Stream complete without timeout (${timeElapsed(t0)})`);
             if (!ok) {
               logPush("WARN", prefix, `Stream ended but data is too small`);
-              setStatus(statusCell, "Not detected, but data is too small ⚠️", "");
+              setStatus(statusCell, "Not detected ✅", "");
             }
             break;
           }
