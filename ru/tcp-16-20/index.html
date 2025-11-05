@@ -136,12 +136,12 @@
 
   <script>
     const TEST_SUITE = [
-      { id: "ABM-01", provider: "Abstract Web", times: 1, url: "https://abstractenv.com/app/source.json" },
-      { id: "AB-02", provider: "Abstract UDN2", times: 1, url: "https://udn2.abstractenv.com/" },
-      { id: "ACH-01", provider: "Abstract China infra2", times: 1, url: "https://china-infra2.abstractenv.com/" },
+      { id: "ABM-01", provider: "Abstract Web", times: 10, url: "https://abstractenv.com/app/source.json" },
+      { id: "AB-02", provider: "Abstract UDN2", times: 10, url: "https://udn2.abstractenv.com/" },
+      { id: "ACH-01", provider: "Abstract China infra2", times: 10, url: "https://china-infra2.abstractenv.com/" },
     ];
 
-    const OK_THRESHOLD_BYTES = 64 * 1024;
+    const OK_THRESHOLD_BYTES = 64 * 1024 * 1024;
     let TIMEOUT_MS = 5000;
 
     (function getParamsHandler() {
